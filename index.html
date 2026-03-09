@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>SiquijorEscape</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="https://img.freepik.com/premium-vector/se-logo-vector_724449-220.jpg" rel="icon">
+  <link href="https://img.freepik.com/premium-vector/se-logo-vector_724449-220.jpg" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: TravelTime
+  * Template URL: https://bootstrapmade.com/traveltime-bootstrap-travel-template/
+  * Updated: Jul 28 2025 with Bootstrap v5.3.7
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="https://img.freepik.com/premium-vector/se-logo-vector_724449-220.jpg" alt="">
+        <h1 class="sitename">SiquijorEscape</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="tours.html">Tours</a></li>
+            <ul>
+              <li><a href="booking.html">Booking</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="index.html#about">Get Started</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Travel Hero Section -->
+    <section id="travel-hero" class="travel-hero section dark-background">
+
+      <div class="container">
+
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="content">
+              <h1>Discover Siquijor</h1>
+              <p class="lead">The Island of Fire - Beaches, Waterfalls, and Hidden Paradise</p>
+              <div class="d-flex flex-wrap gap-3 mt-4">
+                <a href="destinations.html" class="btn btn-warning btn-lg">Explore Attractions</a>
+                <a href="tours.html" class="btn btn-outline-light">View Tours</a>
+
+
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 mt-5 mt-lg-0">
+            <div class="booking-form">
+              <form action="" method="post">
+                <div class="row gy-3">
+                  <div class="col-md-12">
+                    <label for="destination">Destination</label>
+                    <input type="text" name="destination" id="destination" class="form-control" placeholder="Where do you want to go?" required="">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="check-in">Check In</label>
+                    <input type="date" name="checkin" id="check-in" class="form-control" required="">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="check-out">Check Out</label>
+                    <input type="date" name="checkout" id="check-out" class="form-control" required="">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="adults">Adults</label>
+                    <input type="number" name="adults" id="adults" class="form-control" min="1" max="20" value="2" required="">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="children">Children</label>
+                    <input type="number" name="children" id="children" class="form-control" min="0" max="20" value="0">
+                  </div>
+                  <div class="col-md-12 text-center">
+                    <button type="submit" class="btn btn-accent w-100 mt-3">Search Tours</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Travel Hero Section -->
+
+    <!-- Why Us Section -->
+    <section id="why-us" class="why-us section">
+
+      <div class="container">
+
+        <!-- Main Content Grid -->
+        <div class="content-grid">
+          <div class="row g-4 align-items-stretch">
+
+            <!-- About Section -->
+            <div class="col-lg-6">
+              <div class="about-block">
+                <div class="about-header">
+                  <span class="section-badge">About Us</span>
+                  <h3>Creating Unforgettable Travel Experiences</h3>
+                </div>
+                <div class="about-content">
+<p>
+Welcome to Discover Siquijor, your travel guide to one of the most beautiful 
+islands in the Philippines. Our goal is to showcase the natural wonders, 
+culture, and adventures that make Siquijor a must-visit destination for 
+travelers from around the world.
+</p>
+
+<p>
+From stunning waterfalls and white sand beaches to historic churches and 
+mountain viewpoints, Siquijor offers a unique island experience. Through 
+this website, visitors can explore the island’s top attractions, discover 
+exciting activities, and learn how to plan the perfect trip to this hidden 
+paradise.
+</p>
+                  <div class="feature-list">
+                    <div class="feature-item">
+                      <i class="bi bi-check-circle-fill"></i>
+                      <span>Expert local guides in every destination</span>
+                    </div>
+                    <div class="feature-item">
+                      <i class="bi bi-check-circle-fill"></i>
+                      <span>Customized itineraries for every traveler</span>
+                    </div>
+                    <div class="feature-item">
+                      <i class="bi bi-check-circle-fill"></i>
+                      <span>24/7 customer support throughout your journey</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Image Showcase -->
+            <div class="col-lg-6">
+              <div class="image-showcase">
+                <div class="main-image">
+                  <img src="https://images.unsplash.com/photo-1685685476548-8d57bc46032d?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Travel Adventure" class="img-fluid rounded-3">
+                  <div class="overlay-badge">
+                    <div class="badge-content">
+                      <i class="bi bi-award-fill"></i>
+                      <div class="badge-text">
+                        <strong>Award Winner</strong>
+                        <span>Best Travel Agency 2025</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="floating-card">
+                  <img src="https://media.tenor.com/1umc9OmRtVMAAAAM/in-love-patrick.gif" alt="Happy Travelers" class="img-fluid rounded-2">
+                  <div class="card-content">
+                    <div class="rating">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <span>4.9/5</span>
+                    </div>
+                    <p>"Amazing experience!"</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div><!-- End Main Content Grid -->
+
+        <!-- Why Choose Us Section -->
+        <div class="why-choose-wrapper">
+          <div class="section-header text-center">
+            <span class="section-badge">Why Choose Us</span>
+            <h3>What Makes Us Different</h3>
+            <p>
+          Siquijor is one of the Philippines’ most enchanting island destinations. 
+          Known as the “Island of Fire,” it offers travelers a peaceful escape filled 
+          with natural beauty, crystal-clear waters, and rich cultural heritage.
+            </p>
+
+            <p>
+            Visitors can experience breathtaking waterfalls, pristine beaches, historic 
+            landmarks, and outdoor adventures all in one island. Whether you are looking 
+            for relaxation or adventure, Siquijor provides unforgettable experiences 
+            for every traveler.
+            </p>
+          </div>
+
+          <div class="features-container">
+            <div class="row g-4">
+
+              <div class="col-lg-3 col-md-6">
+                <div class="feature-box">
+                  <div class="feature-icon-wrapper">
+                    <div class="feature-icon">
+                      <i class="bi bi-compass"></i>
+                    </div>
+                  </div>
+                  <h4>Expert Navigation</h4>
+                  <p>Guided by industry specialists who turn complex paths into clear directions.</p>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6">
+                <div class="feature-box">
+                  <div class="feature-icon-wrapper">
+                    <div class="feature-icon">
+                      <i class="bi bi-heart-fill"></i>
+                    </div>
+                  </div>
+                  <h4>Personalized Care</h4>
+                  <p>Custom-tailored solutions designed to fit your unique needs and goals.</p>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6">
+                <div class="feature-box">
+                  <div class="feature-icon-wrapper">
+                    <div class="feature-icon">
+                      <i class="bi bi-lightning-charge-fill"></i>
+                    </div>
+                  </div>
+                  <h4>Instant Booking</h4>
+                  <p>Skip the wait and secure your spot in seconds with our real-time portal.</p>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6">
+                <div class="feature-box">
+                  <div class="feature-icon-wrapper">
+                    <div class="feature-icon">
+                      <i class="bi bi-globe-americas"></i>
+                    </div>
+                  </div>
+                  <h4>Worldwide Coverage</h4>
+                  <p>Global reach with local expertise to support you wherever you are.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div><!-- End Why Choose Us Section -->
+
+      </div>
+
+    </section><!-- /Why Us Section -->
+
+    <!-- Featured Destinations Section -->
+    <section id="featured-destinations" class="featured-destinations section">
+
+      <!-- Section Title -->
+      <div class="container section-title">
+        <h2>Featured Destinations</h2>
+        <div><span>Check Our</span> <span class="description-title">Featured Destinations</span></div>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="destination-card">
+              <div class="image-wrapper">
+                <img src="https://www.thecoastalcampaign.com/wp-content/uploads/2020/05/Cambugahay-Falls-Siquijor-Philippines-1024x682.jpg" alt="Destination" class="img-fluid">
+                <div class="overlay">
+                  <div class="badge">Popular</div>
+                </div>
+              </div>
+              <div class="content">
+                <h4>Cambugahay Falls</h4>
+                <p>Cambugahay Falls is one of Siquijor’s most famous natural attractions. This three-tiered waterfall features clear turquoise water and lush surroundings, making it perfect for swimming, relaxing, and rope swinging.</p>
+                <div class="features">
+                  <span class="feature-tag">Nature</span>
+                  <span class="feature-tag">Trending</span>
+                </div>
+                <div class="card-footer">
+                  <div class="tours-count">12 Tours Available</div>
+                  <a href="#" class="explore-btn">
+                    Explore <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Destination Card -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="destination-card">
+              <div class="image-wrapper">
+                <img src="https://dailytravelpill.com/wp-content/uploads/2020/01/salagdoong-beach-siquijor-aerial-view.jpg" alt="Destination" class="img-fluid">
+                <div class="overlay">
+                  <div class="badge featured">Editor's Pick</div>
+                </div>
+              </div>
+              <div class="content">
+                <h4>Salagdoong Beach</h4>
+                <p>Salagdoong Beach is known for its crystal-clear waters and exciting cliff diving spots. Visitors can jump from platforms overlooking the sea or simply enjoy the peaceful beach and scenic ocean views.</p>
+                <div class="features">
+                  <span class="feature-tag">Adventure</span>
+                  <span class="feature-tag">Culture</span>
+                </div>
+                <div class="card-footer">
+                  <div class="tours-count">18 Tours Available</div>
+                  <a href="#" class="explore-btn">
+                    Explore <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Destination Card -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="destination-card">
+              <div class="image-wrapper">
+                <img src="https://www.jonnymelon.com/wp-content/uploads/2019/10/paliton-beach-siquijor-2.jpg" alt="Destination" class="img-fluid">
+                <div class="overlay">
+                  <div class="badge new">New</div>
+                </div>
+              </div>
+              <div class="content">
+                <h4>Paliton Beach</h4>
+                <p>Paliton Beach is often called the “Little Boracay of Siquijor.” Its white sand, swaying coconut trees, and breathtaking sunsets make it one of the best places on the island to relax and enjoy the beauty of nature.</p>
+                <div class="features">
+                  <span class="feature-tag">Relaxation</span>
+                  <span class="feature-tag">Peaceful</span>
+                </div>
+                <div class="card-footer">
+                  <div class="tours-count">8 Tours Available</div>
+                  <a href="#" class="explore-btn">
+                    Explore <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Destination Card -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="destination-card">
+              <div class="image-wrapper">
+                <img src="https://as2.ftcdn.net/jpg/02/64/31/85/1000_F_264318521_tv7bB1cWSGJkJUy3GChutsEF1WD7GuI0.jpg" alt="Destination" class="img-fluid">
+              </div>
+              <div class="content">
+                <h4>Lazi Church</h4>
+                <p>Lazi Church, also known as San Isidro Labrador Parish Church, is a historic landmark built during the Spanish colonial period. Its beautiful stone architecture and peaceful surroundings reflect the rich cultural heritage of Siquijor.</p>
+                <div class="features">
+                  <span class="feature-tag">Culture</span>
+                  <span class="feature-tag">History</span>
+                </div>
+                <div class="card-footer">
+                  <div class="tours-count">15 Tours Available</div>
+                  <a href="#" class="explore-btn">
+                    Explore <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Destination Card -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="destination-card">
+              <div class="image-wrapper">
+                <img src="https://siquijordirectory.com/wp-content/uploads/2022/04/Tulapos21.jpg" alt="Destination" class="img-fluid">
+              </div>
+              <div class="content">
+                <h4>Tulapos Marine Sanctuary</h4>
+                <p>Tulapos Marine Sanctuary is a protected coastal area known for its richmarine biodiversity and clear waters. It is an excellent place for snorkelingand observing colorful coral reefs and tropical fish in their natural habitat.Visitors can enjoy peaceful surroundings while experiencing the beauty ofSiquijor’s underwater ecosystem.</p>
+                <div class="features">
+                  <span class="feature-tag">Adventure</span>
+                  <span class="feature-tag">Marine Life</span>
+                </div>
+                <div class="card-footer">
+                  <div class="tours-count">22 Tours Available</div>
+                  <a href="#" class="explore-btn">
+                    Explore <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Destination Card -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="destination-card">
+              <div class="image-wrapper">
+                <img src="https://i.ytimg.com/vi/YI9d1miUNXc/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLD8UlrG0W5xZfEUvB6s_Sm_VQLpvw" alt="Destination" class="img-fluid">
+              </div>
+              <div class="content">
+                <h4>Mt. Bandilaan</h4>
+                <p>Mt. Bandilaan is the highest point in Siquijor and offers panoramic views of the island and surrounding sea. Visitors can enjoy nature trails, peaceful forests, and a relaxing mountain atmosphere.</p>
+                <div class="features">
+                  <span class="feature-tag">Scenery</span>
+                  <span class="feature-tag">Adventure</span>
+                </div>
+                <div class="card-footer">
+                  <div class="tours-count">6 Tours Available</div>
+                  <a href="#" class="explore-btn">
+                    Explore <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Destination Card -->
+
+        </div>
+
+        <div class="destinations-cta">
+          <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+              <h3>Can't Decide Where to Go?</h3>
+              <p>Our travel experts are here to help you find the perfect destination based on your preferences, budget, and travel style.</p>
+              <div class="cta-buttons">
+                <a href="destinations.html" class="btn btn-primary">View All Destinations</a>
+                <a href="contact.html" class="btn btn-outline">Talk to Expert</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Featured Destinations Section -->
+
+    <!-- Featured Tours Section -->
+    <section id="featured-tours" class="featured-tours section">
+
+      <!-- Section Title -->
+      <div class="container section-title">
+        <h2>Featured Tours</h2>
+        <div><span>Check Our</span> <span class="description-title">Featured Tours</span></div>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row g-4">
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="destination-card">
+              <div class="destination-overlay">
+                <img src="https://www.weseektravel.com/wp-content/uploads/2021/11/SALAGDOONG-BEACH-Siquijor-1-512x768.jpg" alt="Cliff Diving" class="img-fluid" loading="lazy">
+                <div class="card-overlay">
+                  <div class="badge-container">
+                    <span class="featured-badge">Best Seller</span>
+                    <span class="price-tag">₱3,290</span>
+                  </div>
+                  <div class="card-details">
+                    <h5>Cliff Diving</h5>
+                    <div class="meta-info">
+                      <span><i class="bi bi-calendar3"></i> 1 Day</span>
+                      <span><i class="bi bi-geo-alt"></i> Salagdoong</span>
+                    </div>
+                    <p>Experience the thrill of cliff diving at Salagdoong Beach, where visitors can jump into the clear blue waters from specially built platforms. It is one of the most exciting activities on the island.</p>
+                    <div class="action-row">
+                      <a href="booking.html" class="explore-btn">Explore Tour</a>
+                      <div class="rating-stars">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                        <small>4.7</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Tour Item -->
+
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="destination-card">
+              <div class="destination-overlay">
+                <img src="https://i.pinimg.com/736x/0d/5e/ca/0d5eca756f8a173eacd07622660adfaf.jpg" alt="Snorkeling" class="img-fluid" loading="lazy">
+                <div class="card-overlay">
+                  <div class="badge-container">
+                    <span class="featured-badge hot">Hot Deal</span>
+                    <span class="price-tag">₱1,850</span>
+                  </div>
+                  <div class="card-details">
+                    <h5>Snorkeling</h5>
+                    <div class="meta-info">
+                      <span><i class="bi bi-calendar3"></i> 6 Days</span>
+                      <span><i class="bi bi-geo-alt"></i> Siquijor</span>
+                    </div>
+                    <p>Discover the vibrant marine life of Siquijor through snorkeling. Crystal-clear waters allow visitors to explore colorful coral reefs and tropical fish just a few meters from the shore.</p>
+                    <div class="action-row">
+                      <a href="booking.html" class="explore-btn">Explore Tour</a>
+                      <div class="rating-stars">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <small>4.9</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Tour Item -->
+
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="destination-card">
+              <div class="destination-overlay">
+                <img src="https://i.pinimg.com/736x/53/88/f7/5388f78454d0d916fef362e7f5e70c3a.jpg" alt="Island Hopping" class="img-fluid" loading="lazy">
+                <div class="card-overlay">
+                  <div class="badge-container">
+                    <span class="featured-badge cultural">Cultural</span>
+                    <span class="price-tag">₱2,640</span>
+                  </div>
+                  <div class="card-details">
+                    <h5>Island Hopping</h5>
+                    <div class="meta-info">
+                      <span><i class="bi bi-calendar3"></i> 9 Days</span>
+                      <span><i class="bi bi-geo-alt"></i> Siquijor</span>
+                    </div>
+                    <p>Island hopping tours let visitors explore nearby beaches, hidden coves, and scenic coastal areas around Siquijor. It is the perfect way to experience the island’s natural beauty.</p>
+                    <div class="action-row">
+                      <a href="booking.html" class="explore-btn">Explore Tour</a>
+                      <div class="rating-stars">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                        <small>4.5</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Tour Item -->
+
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="destination-card">
+              <div class="destination-overlay">
+                <img src="https://i.pinimg.com/1200x/12/03/21/12032160b9e21be374964ce4155bad52.jpg" alt="Sunset Watching" class="img-fluid" loading="lazy">
+                <div class="card-overlay">
+                  <div class="badge-container">
+                    <span class="featured-badge limited">Unlimited</span>
+                    <span class="price-tag">₱Free</span>
+                  </div>
+                  <div class="card-details">
+                    <h5>Sunset Watching</h5>
+                    <div class="meta-info">
+                      <span><i class="bi bi-calendar3"></i> Anytime while you're staying</span>
+                      <span><i class="bi bi-geo-alt"></i> Paliton Beach</span>
+                    </div>
+                    <p>Paliton Beach offers one of the most beautiful sunset views in the Philippines. As the sun sets over the horizon, the sky fills with vibrant colors creating a relaxing and unforgettable moment.</p>
+                    <div class="action-row">
+                      <a href="booking.html" class="explore-btn">Explore Tour</a>
+                      <div class="rating-stars">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <small>4.8</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Tour Item -->
+
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="destination-card">
+              <div class="destination-overlay">
+                <img src="https://i.pinimg.com/1200x/0c/03/c2/0c03c27ccaf537b4880e17a7551e8624.jpg" alt="Mountain Trekking" class="img-fluid" loading="lazy">
+                <div class="card-overlay">
+                  <div class="badge-container">
+                    <span class="featured-badge new">New Tour</span>
+                    <span class="price-tag">₱1,199</span>
+                  </div>
+                  <div class="card-details">
+                    <h5>Mountain Trekking</h5>
+                    <div class="meta-info">
+                      <span><i class="bi bi-calendar3"></i> 2 Days</span>
+                      <span><i class="bi bi-geo-alt"></i> Mt. Bandilaan</span>
+                    </div>
+                    <p>Nature lovers can enjoy trekking at Mt. Bandilaan, where trails lead through lush forests and scenic viewpoints. It is a peaceful escape for those who want to experience Siquijor’s natural landscapes.</p>
+                    <div class="action-row">
+                      <a href="booking.html" class="explore-btn">Explore Tour</a>
+                      <div class="rating-stars">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                        <small>4.6</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Tour Item -->
+
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="destination-card">
+              <div class="destination-overlay">
+                <img src="https://i.pinimg.com/1200x/c3/a5/51/c3a551f09d603a6d1789a0d039d0b2b0.jpg" alt="Falls Journey" class="img-fluid" loading="lazy">
+                <div class="card-overlay">
+                  <div class="badge-container">
+                    <span class="featured-badge adventure">Adventure</span>
+                    <span class="price-tag">₱580</span>
+                  </div>
+                  <div class="card-details">
+                    <h5>Visiting Tulapos Falls</h5>
+                    <div class="meta-info">
+                      <span><i class="bi bi-calendar3"></i> 3 Days</span>
+                      <span><i class="bi bi-geo-alt"></i> Tulapos</span>
+                    </div>
+                    <p>Tulapos Falls is a unique waterfall in Siquijor known for its strong andnarrow cascade of water flowing through rocky cliffs. Surrounded by lushgreenery, it offers visitors a quiet and refreshing place to relax andexperience the island’s natural beauty.</p>
+                    <div class="action-row">
+                      <a href="booking.html" class="explore-btn">Explore Tour</a>
+                      <div class="rating-stars">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                        <small>4.4</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Tour Item -->
+
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="destination-card">
+              <div class="destination-overlay">
+                <img src="https://i.pinimg.com/736x/9d/5c/26/9d5c26608b1364bbb47ae4761f6f3a55.jpg" alt="Culture Explorer" class="img-fluid" loading="lazy">
+                <div class="card-overlay">
+                  <div class="badge-container">
+                    <span class="featured-badge popular">Popular</span>
+                    <span class="price-tag">₱1,560</span>
+                  </div>
+                  <div class="card-details">
+                    <h5>Siquijor Cultural Heritage Tour</h5>
+                    <div class="meta-info">
+                      <span><i class="bi bi-calendar3"></i> 1 Day</span>
+                      <span><i class="bi bi-geo-alt"></i> Siquijor</span>
+                    </div>
+                    <p>Explore the rich history and traditions of Siquijor through a culturalheritage tour. Visitors can see historic landmarks such as Lazi Churchand the centuries-old convent while learning about the island’s uniqueculture and local traditions.</p>
+                    <div class="action-row">
+                      <a href="booking.html" class="explore-btn">Explore Tour</a>
+                      <div class="rating-stars">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                        <small>4.7</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Tour Item -->
+
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="destination-card">
+              <div class="destination-overlay">
+                <img src="https://i.pinimg.com/736x/89/8e/a2/898ea2b6cb234f292b680567ff5b5daa.jpg" alt="Motorcycle Tour" class="img-fluid" loading="lazy">
+                <div class="card-overlay">
+                  <div class="badge-container">
+                    <span class="featured-badge luxury">Luxury</span>
+                    <span class="price-tag">₱4,890</span>
+                  </div>
+                  <div class="card-details">
+                    <h5>Motorcycle Island Tour</h5>
+                    <div class="meta-info">
+                      <span><i class="bi bi-calendar3"></i> 1 Day</span>
+                      <span><i class="bi bi-geo-alt"></i> Siquijor</span>
+                    </div>
+                    <p>One of the most popular ways to explore Siquijor is by riding a motorcyclearound the island. Travelers can enjoy scenic coastal roads, stop atbeautiful beaches, and visit waterfalls and viewpoints along the way.</p>
+                    <div class="action-row">
+                      <a href="booking.html" class="explore-btn">Explore Tour</a>
+                      <div class="rating-stars">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <small>5.0</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Tour Item -->
+
+        </div>
+
+        <div class="text-center mt-5">
+          <a href="tours.html" class="discover-more-btn">Discover More Adventures</a>
+        </div>
+
+      </div>
+
+    </section><!-- /Featured Tours Section -->
+
+    <!-- Testimonials Home Section -->
+    <section id="testimonials-home" class="testimonials-home section">
+
+      <!-- Section Title -->
+      <div class="container section-title">
+        <h2>Commendations</h2>
+        <div><span>What Our Customers</span> <span class="description-title">Are Saying</span></div>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row gy-4 justify-content-center">
+                  <div class="col-lg-6">
+                    <div class="testimonial-content">
+                      <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        <span>Visiting Siquijor was an unforgettable experience. The waterfalls, beaches, and peaceful atmosphere make it one of the most beautiful destinations in the Philippines.</span>
+                        <i class="bi bi-quote quote-icon-right"></i>
+                      </p>
+                      <h3>Saul Goodman</h3>
+                      <h4>Lawyer</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 text-center">
+                    <img src="https://static.wikia.nocookie.net/breakingbad/images/8/8e/BCS_S6_Portrait_Jimmy.jpg/revision/latest?cb=20220802210840" class="img-fluid testimonial-img" alt="">
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row gy-4 justify-content-center">
+                  <div class="col-lg-6">
+                    <div class="testimonial-content">
+                      <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        <span>Siquijor is the perfect place to relax and explore nature. The island is not overcrowded, and the locals are incredibly welcoming.</span>
+                        <i class="bi bi-quote quote-icon-right"></i>
+                      </p>
+                      <h3>Walter White</h3>
+                      <h4>Chemistry Teacher</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 text-center">
+                    <img src="https://i.redd.it/walter-white-3d-fanart-beloved-father-husband-and-chemistry-v0-1iu9nae72w191.jpg?width=3117&format=pjpg&auto=webp&s=7c81c8eb1c474317a04863a8c07578adccf911e2" class="img-fluid testimonial-img" alt="">
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row gy-4 justify-content-center">
+                  <div class="col-lg-6">
+                    <div class="testimonial-content">
+                      <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        <span>The sunsets at Paliton Beach and the adventure at Cambugahay Falls made our trip to Siquijor truly memorable. I would definitely visit again. I miss Jane YO</span>
+                        <i class="bi bi-quote quote-icon-right"></i>
+                      </p>
+                      <h3>Jesse Pinkman</h3>
+                      <h4>Tourist</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 text-center">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/c/c6/Jesse_Pinkman_S5B.png" class="img-fluid testimonial-img" alt="">
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row gy-4 justify-content-center">
+                  <div class="col-lg-6">
+                    <div class="testimonial-content">
+                      <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        <span>I loved my visit in Siquijor, it is a one of a kind experience for me. Visit Los Polos Hermanos and I suggest you try our signature spice curls</span>
+                        <i class="bi bi-quote quote-icon-right"></i>
+                      </p>
+                      <h3>Gus Fring</h3>
+                      <h4>Entrepreneur</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 text-center">
+                    <img src="https://static.wikia.nocookie.net/villains/images/7/75/Pollos2.png/revision/latest?cb=20230321121053" class="img-fluid testimonial-img" alt="">
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Home Section -->
+
+    <!-- Call To Action Section -->
+    <section id="call-to-action" class="call-to-action section">
+
+      <div class="container">
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h2>Ready to Start Your Next Adventure?</h2>
+            <p>Discover breathtaking destinations, create unforgettable memories, and explore the world with our expertly crafted travel packages. From exotic beaches to mountain peaks, your perfect journey awaits.</p>
+            <div class="cta-buttons">
+              <a href="destinations.html" class="btn-primary">Explore Destinations</a>
+              <a href="tours.html" class="btn-secondary">Plan Your Trip</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-lg-3 col-md-6">
+            <div class="feature-item text-center">
+              <div class="icon">
+                <i class="bi bi-globe"></i>
+              </div>
+              <h4>50+ Destinations</h4>
+              <p>Explore amazing destinations across all continents</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="feature-item text-center">
+              <div class="icon">
+                <i class="bi bi-shield-check"></i>
+              </div>
+              <h4>Safe &amp; Secure</h4>
+              <p>Travel with confidence with our safety guarantee</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="feature-item text-center">
+              <div class="icon">
+                <i class="bi bi-headset"></i>
+              </div>
+              <h4>24/7 Support</h4>
+              <p>Round-the-clock assistance whenever you need it</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="feature-item text-center">
+              <div class="icon">
+                <i class="bi bi-percent"></i>
+              </div>
+              <h4>Best Prices</h4>
+              <p>Competitive rates with exclusive deals and offers</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="stats-section">
+          <div class="row text-center">
+            <div class="col-lg-3 col-md-6">
+              <div class="stat-item">
+                <span class="stat-number purecounter" data-purecounter-start="0" data-purecounter-end="15000" data-purecounter-duration="2"></span>
+                <span class="stat-label">Happy Travelers</span>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="stat-item">
+                <span class="stat-number purecounter" data-purecounter-start="0" data-purecounter-end="67" data-purecounter-duration="2"></span>
+                <span class="stat-label">Countries Covered</span>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="stat-item">
+                <span class="stat-number purecounter" data-purecounter-start="0" data-purecounter-end="98" data-purecounter-duration="2"></span>
+                <span class="stat-label">Satisfaction Rate</span>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="stat-item">
+                <span class="stat-number purecounter" data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="2"></span>
+                <span class="stat-label">Years Experience</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Call To Action Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative dark-background">
+
+    <div class="container">
+      <div class="row gy-5">
+
+        <div class="col-lg-4">
+          <div class="footer-content">
+            <a href="index.html" class="logo d-flex align-items-center mb-4">
+              <span class="sitename">SiquijorEscape</span>
+            </a>
+            <p class="mb-4">Discover Siquijor is a tourism website created to highlight the island’s natural beauty, cultural landmarks, and exciting adventures. Explore the best attractions, activities, and travel tips to help you plan an unforgettable trip to Siquijor Island.</p>
+
+            <div class="newsletter-form">
+              <h5>Stay Updated</h5>
+              <form action="forms/newsletter.php" method="post" class="php-email-form">
+                <div class="input-group">
+                  <input type="email" name="email" class="form-control" placeholder="Enter your email" required="">
+                  <button type="submit" class="btn-subscribe">
+                    <i class="bi bi-send"></i>
+                  </button>
+                </div>
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Thank you for subscribing!</div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6">
+          <div class="footer-links">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#"><i class="bi bi-chevron-right"></i> About</a></li>
+              <li><a href="#"><i class="bi bi-chevron-right"></i> Careers</a></li>
+              <li><a href="#"><i class="bi bi-chevron-right"></i> Press</a></li>
+              <li><a href="#"><i class="bi bi-chevron-right"></i> Blog</a></li>
+              <li><a href="#"><i class="bi bi-chevron-right"></i> Contact</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6">
+          <div class="footer-links">
+            <h4>Solutions</h4>
+            <ul>
+              <li><a href="#"><i class="bi bi-chevron-right"></i> Digital Strategy</a></li>
+              <li><a href="#"><i class="bi bi-chevron-right"></i> Cloud Computing</a></li>
+              <li><a href="#"><i class="bi bi-chevron-right"></i> Data Analytics</a></li>
+              <li><a href="#"><i class="bi bi-chevron-right"></i> AI Solutions</a></li>
+              <li><a href="#"><i class="bi bi-chevron-right"></i> Cybersecurity</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="footer-contact">
+            <h4>Get in Touch</h4>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="bi bi-geo-alt"></i>
+              </div>
+              <div class="contact-info">
+                <p>Barangay Paliton San Juan, Siquijor 6227<br>PHILIPPINES</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="bi bi-telephone"></i>
+              </div>
+              <div class="contact-info">
+                <p>+63-9985764327</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="bi bi-envelope"></i>
+              </div>
+              <div class="contact-info">
+                <p>SiquijorEscape@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-twitter-x"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+              <a href="#"><i class="bi bi-youtube"></i></a>
+              <a href="#"><i class="bi bi-github"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="copyright">
+              <p>© <span>Copyright</span> <strong class="px-1 sitename">MyWebsite</strong> <span>All Rights Reserved</span></p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="footer-bottom-links">
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms of Service</a>
+              <a href="#">Cookie Policy</a>
+            </div>
+            <div class="credits">
+              <!-- All the links in the footer should remain intact. -->
+              <!-- You can delete the links only if you've purchased the pro version. -->
+              <!-- Licensing information: https://bootstrapmade.com/license/ -->
+              <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+              Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> | <a href="https://bootstrapmade.com/tools/">DevTools</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
